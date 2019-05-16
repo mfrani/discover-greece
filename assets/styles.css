@@ -1,5 +1,73 @@
+.about-container {
+  padding: 40px 40px 40px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.about-container button {
+  padding: 15px 27px 15px 27px;
+}
+
+.caption {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.container-image {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  margin: 20px 30px 0 0;
+  outline: 1px solid #ccc;
+  outline-offset: 10px;
+}
+.container-text {
+  display: inline-block;
+  width: 46%;
+  padding-top: 60px;
+}
+.container-text h2 {
+  font-size: 45px;
+  color: rgb(241, 201, 66);
+  padding-bottom: 16px;
+  font-weight: 600;
+}
+.container-text p {
+  font-size: 18px;
+  color: rgb(144, 144, 144);
+}
+.container-text button {
+  margin-top: 18px;
+  float: right;
+}
+
 .custom-select {
   width: 50px;
+}
+.destinations-text {
+  margin-top: 50px;
+  text-align: center;
+}
+.destinations-text h3 {
+  color: rgb(241, 201, 66);
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 14px;
+}
+.destinations-text p {
+  font-size: 18px;
+  color: rgb(144, 144, 144);
+  padding-bottom: 16px;
+}
+.destinations-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .fa-chevron-down {
@@ -7,16 +75,55 @@
   text-align: center;
 }
 
+.img-container {
+  width: 80%;
+  display: inline-block;
+  position: relative;
+}
+.img-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 90%;
+  height: 100%;
+  display: none;
+  color: #fff;
+}
+.img-container:hover .img-thumbnail {
+  opacity: 0.3;
+}
+.img-container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+}
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img-thumbnail {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
 .jumbotron {
   margin-top: -47px;
-  margin-bottom: 0;
+  margin-bottom: 0px !important;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-size: cover;
   background-position: center;
-
   background-image: url("https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
 }
 .jumbotron a {
@@ -58,11 +165,40 @@
 .nav-contact {
   padding-right: 12px;
 }
+.overlay-text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.pic-grid-container {
+  padding: 40px 85px 40px 85px;
+  text-align: center;
+}
+.pic-grid-container button {
+  margin-top: 20px;
+  padding: 15px 27px 15px 27px;
+}
+.reservation-container {
+  background-color: rgb(240, 238, 238);
+  padding-bottom: 30px;
+}
+
 .top-nav-container {
   min-height: 115px;
   padding: 0 55px 0 55px;
 }
+.reservation-container {
+  margin-bottom: 60px;
+}
 .reservation-h3 {
   text-align: center;
   padding-top: 16px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: rgb(104, 104, 104);
+  font-weight: 600;
+}
+.reservation-container button {
+  padding: 10px 10px 10px 10px;
 }
